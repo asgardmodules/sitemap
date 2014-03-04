@@ -1,11 +1,11 @@
 {
-	"name": "coxis/sitemaphtml",
+	"name": "asgard/sitemaphtml",
 	"license": "MIT",
 	"authors": [{
 		"name": "Michel Hognerud",
 		"email": "michel@hognerud.net"
 	}],
     "autoload": {
-        "psr-0": {"Coxis\\Sitemaphtml": "../.."}
+        "psr-0": {"Asgard\\Sitemaphtml": "../.."}
     }
 }

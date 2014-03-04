@@ -1,7 +1,7 @@
 <?php
-namespace Coxis\Sitemaphtml\Controllers;
+namespace Asgard\Sitemaphtml\Controllers;
 
-class SitemapController extends \Coxis\Core\Controller {
+class SitemapController extends \Asgard\Core\Controller {
 	/**
 	@Route('sitemap.html')
 	*/
@@ -11,8 +11,8 @@ class SitemapController extends \Coxis\Core\Controller {
 			$news[$a->__toString()] = $a->url();
 
 		$this->sitemap = array(
-			'Home'	=>	\Coxis\Core\App::get('url')->to(''),
-			'News'	=>	array('_link'=>\Coxis\Core\App::get('url')->to('actualites')) + $news,
+			'Home'	=>	\Asgard\Core\App::get('url')->to(''),
+			'News'	=>	array('_link'=>\Asgard\Core\App::get('url')->to('actualites')) + $news,
 		);
 
 		// d($this->sitemap);
