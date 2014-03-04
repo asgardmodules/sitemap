@@ -11,8 +11,8 @@ class SitemapController extends \Coxis\Core\Controller {
 			$news[$a->__toString()] = $a->url();
 
 		$this->sitemap = array(
-			'Home'	=>	\URL::to(''),
-			'News'	=>	array('_link'=>\URL::to('actualites')) + $news,
+			'Home'	=>	\Coxis\Core\App::get('url')->to(''),
+			'News'	=>	array('_link'=>\Coxis\Core\App::get('url')->to('actualites')) + $news,
 		);
 
 		// d($this->sitemap);
