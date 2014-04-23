@@ -7,15 +7,15 @@ class SitemapController extends \Asgard\Core\Controller {
 	*/
 	public function indexAction() {
 		$news = array();
-		foreach(Actualite::all() as $a)
-			$news[$a->__toString()] = $a->url();
+		#example
+		// foreach(Actualite::all() as $a)
+		// 	$news[$a->__toString()] = $a->url();
 
 		$this->sitemap = array(
 			'Home'	=>	\Asgard\Core\App::get('url')->to(''),
-			'News'	=>	array('_link'=>\Asgard\Core\App::get('url')->to('actualites')) + $news,
+			#example
+			// 'News'	=>	array('_link'=>\Asgard\Core\App::get('url')->to('actualites')) + $news,
 		);
-
-		// d($this->sitemap);
 	}
 
 	public function showSitemap($sitemap, $name=null) {
