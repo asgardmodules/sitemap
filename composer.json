@@ -1,11 +1,8 @@
 {
-	"name": "asgard/sitemaphtml",
+	"name": "asgard/sitemap",
 	"license": "MIT",
 	"authors": [{
 		"name": "Michel Hognerud",
 		"email": "michel@hognerud.net"
-	}],
-    "autoload": {
-        "psr-4": {"Asgard\\Sitemaphtml\\": "."}
-    }
+	}]
 }

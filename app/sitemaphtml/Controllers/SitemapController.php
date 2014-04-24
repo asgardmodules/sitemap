@@ -3,9 +3,16 @@ namespace Asgard\Sitemaphtml\Controllers;
 
 class SitemapController extends \Asgard\Core\Controller {
 	/**
-	@Route('sitemap.html')
+	@Route('sitemap.xml')
 	*/
-	public function indexAction() {
+	public function sitemapxmlAction() {
+		\Asgard\Core\App::get('response')->setHeader('Content-Type', 'text/xml');
+	}
+
+	/**
+	@Route('sitemap')
+	*/
+	public function sitemaphtmlAction() {
 		$news = array();
 		#example
 		// foreach(Actualite::all() as $a)
